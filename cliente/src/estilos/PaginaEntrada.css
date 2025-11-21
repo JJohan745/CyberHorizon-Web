@@ -1,0 +1,83 @@
+.entrada-container {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.entrada-header {
+  background: linear-gradient(90deg, #8ccbfa 0%, #0685f4 70%);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 50%;
+}
+
+.entrada-bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.texto-bienvenida h1 { font-size: 36px; margin: 0 0 10px; }
+.texto-bienvenida span { color: #031a78; }
+
+.descripcion-bienvenida { max-width: 600px; line-height: 1.4; }
+
+.entrada-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+.btn-entrada,
+.btn-secundario {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botón principal */
+.btn-entrada {
+  background-color: #0092f9;
+  color: white;
+  border: 2px solid #0057b8;
+}
+
+.btn-entrada:hover {
+  background-color: #003f8a;
+  transform: translateY(-2px);
+}
+
+/* Botón secundario */
+.btn-secundario {
+  background-color: #fff;
+  color: #0057b8;
+  border: 2px solid #0057b8;
+}
+
+.btn-secundario:hover {
+  background-color: #d3e1f6;
+}
+
+.imagen-bienvenida { width: 320px; max-width: 35%; border-radius: 50%; }
+
+.entrada-aprendizaje { padding: 40px 20px; background: #f7f9fc; }
+.aprendizaje-contenido { max-width: 1100px; margin: 0 auto; display: flex; gap: 20px; align-items: center; }
+.imagen-aprendizaje { width: 300px; max-width: 40%; }
+.lista-aprendizaje { list-style: none; padding: 0; }
+.lista-aprendizaje li { margin: 10px 0; display:flex; gap:10px; align-items:flex-start; }
+.check-icon {font-size:30px; margin-bottom:10px; color: #0092f9; }
+
+.titulo-ventajas { color:white; font-size: larger;}
+.entrada-ventajas { padding: 40px 20px; text-align:center; background: #0092f9;}
+.ventajas-linea { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+.ventaja-bloque { width:220px; background:white; padding:16px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.ventaja-icono { font-size:60px; margin-bottom:10px; color: #0092f9; }
+
+.entrada-footer { text-align:center; padding:10px 20px; background: linear-gradient(90deg, #027ddb 0%, #00213d 70%);}
+.motivacion-bienvenida {color:rgb(254, 254, 255); font-size: larger;}

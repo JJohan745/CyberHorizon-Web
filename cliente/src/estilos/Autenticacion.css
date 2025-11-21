@@ -1,0 +1,231 @@
+/* Cliente/src/estilos/Autenticacion/Autenticacion.css */
+
+/* ---------------------------- */
+/* Contenedor principal */
+.envoltorio-autenticacion {
+  width: 100vw;
+  min-height: 100vh; /* asegurar que ocupe al menos toda la altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c1e5f5 0%, #056dff 100%);
+  overflow-y: auto; /* scroll vertical si es necesario */
+  font-family: Arial, sans-serif;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------- */
+/* Sección del logo */
+.seccion-logo-autenticacion {
+  position: absolute;
+  left: 10%;
+  top:35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #004d99;
+}
+
+.imagen-logo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.texto-logo {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+/* ---------------------------- */
+/* Tarjeta de Login/Registro */
+.tarjeta-autenticacion {
+  width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  left: 120px; /* deja espacio al logo */
+}
+
+.titulo-tarjeta {
+  text-align: center;
+  color: #1f48a9;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* ---------------------------- */
+/* Formulario */
+.formulario-autenticacion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Campos de entrada */
+.campo-entrada {
+  padding: 15px 20px;
+  border: 1px solid #d9e3f0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.campo-entrada::placeholder {
+  color: #aab7c4;
+}
+
+.campo-entrada:focus {
+  border-color: #1f48a9;
+  outline: none;
+}
+
+/* ---------------------------- */
+/* Contenedor y toggle de contraseña */
+.contenedor-password {
+  position: relative;
+  margin-bottom: -5px;
+}
+
+.contenedor-password .campo-entrada {
+  padding-right: 50px;
+}
+
+.icono-toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  cursor: pointer;
+  color: #aab7c4;
+  z-index: 10;
+  font-size: 18px;
+}
+
+.icono-toggle:hover {
+  color: #1f48a9;
+}
+
+/* Ocultar íconos nativos de contraseña */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* ---------------------------- */
+/* Botón principal */
+.boton-autenticacion {
+  padding: 15px;
+  background-color: #11347f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.boton-autenticacion:hover {
+  background-color: #0b1f4a;
+}
+
+/* ---------------------------- */
+/* Texto de registro o login */
+.texto-registro {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #555;
+}
+
+.enlace-registro {
+  color: #1f48a9;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.enlace-registro:hover {
+  opacity: 0.8;
+}
+
+/* ---------------------------- */
+/* Mensajes */
+.mensaje-error {
+  color: #e53935;
+  background-color: #ffebee;
+  border: 1px solid #e53935;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mensaje-exito {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  border: 1px solid #2e7d32;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ---------------------------- */
+/* Media queries */
+@media (max-width: 1200px) {
+  .tarjeta-autenticacion {
+    left: 120px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tarjeta-autenticacion {
+    left: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .seccion-logo-autenticacion {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 30px;
+  }
+
+  .tarjeta-autenticacion {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    left: 0;
+  }
+
+  .envoltorio-autenticacion {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+}

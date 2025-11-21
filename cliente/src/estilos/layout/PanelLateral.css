@@ -1,0 +1,74 @@
+/* =============================== 
+   Contenedor principal de la barra lateral
+=================================*/
+.sidebar {
+  width: 200px;
+  background: #007bff; 
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 2.5rem; 
+  padding: 1.25rem; 
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden; 
+  transition: width 0.3s ease; 
+}
+
+/* Estado cerrado de la barra lateral */
+.sidebar.closed {
+  width: 40px; 
+}
+
+/* ===============================
+   Listas y enlaces dentro de la sidebar
+=================================*/
+.sidebar ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 0.3125rem; 
+  transition: background 0.2s ease; 
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none; 
+  font-size: 1.1rem;
+}
+
+.sidebar li a svg {
+  margin-right: 0.75rem;
+}
+
+.sidebar li:hover {
+  background-color: #0056b3; 
+}
+
+.sidebar a:hover {
+  color: white; 
+}
+
+/* ===============================
+   Botón de alternar (toggle)
+=================================*/
+.toggle-btn {
+  width: 2rem; 
+  height: 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+
+

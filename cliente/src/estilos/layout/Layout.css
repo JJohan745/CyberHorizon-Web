@@ -1,0 +1,16 @@
+/* Cliente/src/estilos/Layout.css */
+.layout-container {
+  display: flex;
+  flex-direction: column; /* Header arriba */
+  height: 100vh;
+}
+
+.contenido-principal {
+  display: flex;
+  flex: 1;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+}

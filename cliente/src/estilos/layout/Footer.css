@@ -1,0 +1,20 @@
+/* Cliente/src/estilos/layout/Footer.css */
+
+.footer-simple {
+  display: flex;
+  justify-content: space-between; /* usuario a la izquierda, texto a la derecha */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #b8d9fc;
+  color: rgb(1, 1, 50);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.footer-usuario {
+  font-weight: 500;
+}
+
+.footer-texto {
+  font-weight: 400;
+}
