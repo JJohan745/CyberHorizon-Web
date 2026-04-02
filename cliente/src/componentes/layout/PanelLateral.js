@@ -10,10 +10,26 @@ function PanelLateral({ rol }) {
 
   const toggleSidebar = () => setAbierto(!abierto);
 
-  const cerrarSesion = () => {
-    // Eliminamos usuario y token del localStorage
+  const cerrarSesion = async () => {
+    const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+    if (usuario?.id) {
+      try {
+        // Avisar al backend que el usuario se desconecta
+        await fetch("http://localhost:3001/api/logout", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: usuario.id }),
+        });
+      } catch (err) {
+        console.error("Error al actualizar estado de usuario:", err);
+      }
+    }
+
+    // Limpiar localStorage
     localStorage.removeItem("usuario");
     localStorage.removeItem("token");
+
     navigate("/"); // Redirige a la página de entrada
   };
 
@@ -44,4 +60,5 @@ function PanelLateral({ rol }) {
 }
 
 export default PanelLateral;
+
 

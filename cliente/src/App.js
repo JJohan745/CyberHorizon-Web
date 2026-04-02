@@ -10,6 +10,11 @@ import Perfil from "./componentes/paginas/Perfil";
 import CursosProgreso from "./componentes/paginas/CursosProgreso";
 import Ayuda from "./componentes/paginas/Ayuda";
 import Administrador from "./componentes/paginas/Administrador";
+import PanelUsuarios from "./componentes/paginas/PanelUsuarios";
+import PanelCursos from "./componentes/paginas/PanelCursos";
+import PanelEncuestas from "./componentes/paginas/PanelEncuestas";
+import PanelMensajes from "./componentes/paginas/PanelMensajes";
+import EstadisticasAvanzadas from "./componentes/paginas/EstadisticasAvanzadas";
 import Layout from "./componentes/layout/Layout";
 
 function App() {
@@ -27,7 +32,15 @@ function App() {
         <Route path="/perfil" element={<RutaPrivada><Layout><Perfil /></Layout></RutaPrivada>}/>
         <Route path="/cursos-en-progreso" element={<RutaPrivada><Layout><CursosProgreso /></Layout></RutaPrivada>}/>
         <Route path="/ayuda" element={<RutaPrivada><Layout><Ayuda /></Layout></RutaPrivada>}/>
+
         <Route path="/administrador" element={<RutaPrivada rol="admin"><Layout><Administrador /></Layout></RutaPrivada>}/>
+        {/* Paneles de administración */}
+        <Route path="/panel-usuarios" element={<RutaPrivada rol="admin"><Layout><PanelUsuarios /></Layout></RutaPrivada>} />
+        <Route path="/panel-cursos" element={<RutaPrivada rol="admin"><Layout><PanelCursos /></Layout></RutaPrivada>} />
+        <Route path="/panel-encuestas" element={<RutaPrivada rol="admin"><Layout><PanelEncuestas /></Layout></RutaPrivada>} />
+        <Route path="/panel-mensajes" element={<RutaPrivada rol="admin"><Layout><PanelMensajes /></Layout></RutaPrivada>} />
+        <Route path="/estadisticas-avanzadas" element={<RutaPrivada rol="admin"><Layout><EstadisticasAvanzadas /></Layout></RutaPrivada>} />
+
       </Routes>
     </Router>
   );

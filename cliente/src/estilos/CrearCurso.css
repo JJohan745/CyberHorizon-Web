@@ -1,0 +1,77 @@
+.crear-curso-contenedor {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.btn-volver {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  background-color: #0092f9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-volver:hover {
+  background-color: #0071c7;
+  transform: translateY(-2px);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #031155;
+}
+
+.form-crear-curso label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.form-crear-curso input,
+.form-crear-curso textarea,
+.form-crear-curso select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.form-crear-curso input:focus,
+.form-crear-curso textarea:focus,
+.form-crear-curso select:focus {
+  outline: none;
+  border-color: #0092f9;
+  box-shadow: 0 0 6px rgba(0,146,249,0.3);
+}
+
+.btn-guardar-curso {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-guardar-curso:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
